@@ -16,7 +16,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 RUN apt-get update -yq
 RUN apt-get upgrade -yq
-RUN apt-get install ca-certificates curl -yq --no-install-recommends
+RUN apt-get install ca-certificates curl sudo -yq --no-install-recommends
 RUN apt-get install git git-lfs -yq --no-install-recommends
 RUN apt-get install build-essential pkg-config -yq
 RUN apt-get install cmake ninja-build -yq --no-install-recommends
